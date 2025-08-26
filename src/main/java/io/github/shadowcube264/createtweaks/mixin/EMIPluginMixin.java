@@ -12,6 +12,7 @@ import io.github.shadowcube264.createtweaks.CreateTweaksConfig;
 
 @Mixin(value = CreateEmiPlugin.class, remap = false)
 public abstract class EMIPluginMixin implements EmiPlugin {
+
     @Redirect(method = "register(Ldev/emi/emi/api/EmiRegistry;)V", at = @At(value = "INVOKE", target="Ldev/emi/emi/api/EmiRegistry;addRecipe(Ldev/emi/emi/api/recipe/EmiRecipe;)V"))
     private void cancelRecipeRegister(EmiRegistry registry, EmiRecipe recipe) {
         if (!(recipe.getCategory() == CreateEmiPlugin.FAN_BLASTING && !CreateTweaksConfig.enableBlasting.get()) && !(recipe.getCategory() == CreateEmiPlugin.FAN_SMOKING && !CreateTweaksConfig.enableSmoking.get())) {

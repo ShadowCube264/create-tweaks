@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class CreateTweaks implements ModInitializer {
+
 	public static final String ID = "create-tweaks";
 	public static final String NAME = "Create Tweaks";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);

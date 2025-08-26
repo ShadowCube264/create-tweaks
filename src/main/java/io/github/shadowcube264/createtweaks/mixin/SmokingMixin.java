@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AllFanProcessingTypes.SmokingType.class)
 public abstract class SmokingMixin {
+
 	@Inject(method = "canProcess", at = @At("HEAD"), cancellable = true)
 	private void cancelProcessing(CallbackInfoReturnable<Boolean> ci) {
 		if (!CreateTweaksConfig.enableSmoking.get()) {
