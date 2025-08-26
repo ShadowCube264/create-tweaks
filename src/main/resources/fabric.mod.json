@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "create-tweaks",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create Tweaks",
+  "description": "More config options for Create",
   "authors": [
-    "Me!"
+    "ShadowCube264"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/ShadowCube264/create-tweaks"
   },
-  "license": "CC0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "io.github.shadowcube264.createtweaks.CreateTweaks"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "create-tweaks.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
