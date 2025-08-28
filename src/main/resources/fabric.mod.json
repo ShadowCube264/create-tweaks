@@ -17,9 +17,12 @@
     "main": [
       "io.github.shadowcube264.createtweaks.CreateTweaks"
     ],
-    "jei_mod_plugin" : [
-      "io.github.shadowcube264.createtweaks.JEIPlugin"
-    ]
+    "jei_mod_plugin": [
+      "io.github.shadowcube264.createtweaks.plugins.JEIPlugin"
+    ],
+    "rei_client": [
+      "io.github.shadowcube264.createtweaks.plugins.REIPlugin"
+    ] 
   },
   "mixins": [
     "create-tweaks.mixins.json"

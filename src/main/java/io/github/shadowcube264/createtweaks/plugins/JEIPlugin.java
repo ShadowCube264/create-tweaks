@@ -1,5 +1,7 @@
-package io.github.shadowcube264.createtweaks;
+package io.github.shadowcube264.createtweaks.plugins;
 
+import io.github.shadowcube264.createtweaks.CreateTweaks;
+import io.github.shadowcube264.createtweaks.CreateTweaksConfig;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.recipe.IRecipeManager;
