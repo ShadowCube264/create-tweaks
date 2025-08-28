@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BlastingMixin",
-    "SmokingMixin",
-    "EMIPluginMixin"
+    "SmokingMixin"
   ],
   "client": [
   ],

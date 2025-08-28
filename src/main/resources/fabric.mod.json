@@ -11,11 +11,14 @@
     "sources": "https://github.com/ShadowCube264/create-tweaks"
   },
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/create-tweaks/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       "io.github.shadowcube264.createtweaks.CreateTweaks"
+    ],
+    "emi": [
+      "io.github.shadowcube264.createtweaks.plugins.EMIPlugin"
     ],
     "jei_mod_plugin": [
       "io.github.shadowcube264.createtweaks.plugins.JEIPlugin"
