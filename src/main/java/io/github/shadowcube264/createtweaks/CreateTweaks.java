@@ -1,6 +1,6 @@
 package io.github.shadowcube264.createtweaks;
 
-import com.simibubi.create.Create;
+import com.simibubi.create.CreateBuildInfo;
 
 import fuzs.forgeconfigapiport.api.config.v2.ForgeConfigRegistry;
 import net.fabricmc.api.ModInitializer;
@@ -19,7 +19,7 @@ public class CreateTweaks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
+		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, CreateBuildInfo.VERSION);
 		ForgeConfigRegistry.INSTANCE.register(ID, ModConfig.Type.COMMON, CreateTweaksConfig.CONFIG_SPEC);
 	}
 
